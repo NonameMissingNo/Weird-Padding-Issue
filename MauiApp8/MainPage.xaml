@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp8.MainPage">
+    <Grid x:Name="Main">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="{OnIdiom Desktop=120, Default=120}"/>
+            <RowDefinition Height="{OnIdiom Desktop=120, Default=120}"/>
+            <RowDefinition Height="{OnIdiom Desktop=120, Default=120}"/>
+            <RowDefinition Height="{OnIdiom Desktop=120, Default=120}"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ImageButton WidthRequest="100" Grid.Row="0" Grid.ColumnSpan="3" Margin="10,0,0,0" Source="flaghu.webp" Aspect="AspectFit" HeightRequest="100" BackgroundColor="Transparent" BorderColor="Transparent" HorizontalOptions="Start"/>
+        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="60" Margin="130,15,130,25">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="40, 40, 40, 40">
+                </RoundRectangle>
+            </Border.StrokeShape>
+            <HorizontalStackLayout x:Name="PackageBox">
+                <Image />
+                <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center" BackgroundColor="White">
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Border>
+        <Label x:Name="package" Grid.Row="0" Grid.Column="1" Padding="0, 25, 0, 0" VerticalOptions="Start" TextColor="White" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        <Label x:Name="time" Grid.Row="0" Grid.Column="1" Padding="0, 25, 0, 0" TextColor="White" Text="time" IsVisible="False"/>
+        <ImageButton WidthRequest="100" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,10,0" Source="flagen.webp" Aspect="AspectFit" HeightRequest="100" BackgroundColor="Transparent" BorderColor="Transparent" HorizontalOptions="End"/>
+        <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Source="menulogo.png" Margin="16, 0, 16, 16"/>
+
+        <VerticalStackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="0" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" HorizontalOptions="Center" Source="dotnet_bot.png" x:Name="Btn0"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="5" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png" x:Name="Btn1"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Grid.Column="2" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="10" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn2"/>
+        </VerticalStackLayout>
+
+
+
+        <VerticalStackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="15" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn3"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="20" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn4"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3" Grid.Column="2" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="25" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn5"/>
+        </VerticalStackLayout>
+
+
+
+        <VerticalStackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="30" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  Aspect="AspectFill" x:Name="Btn6"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="4" Grid.Column="1" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="10" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn9"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Column="2" Grid.Row="4" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="10" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn10"/>
+        </VerticalStackLayout>
+
+
+
+        <VerticalStackLayout Grid.Column="0" Grid.Row="5" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="10" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn11"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Column="1" Grid.Row="5" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="10" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn12"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Column="2" Grid.Row="5" HorizontalOptions="Center">
+            <ImageButton BackgroundColor="#00AEEF" Padding="10" CornerRadius="10" WidthRequest="{OnIdiom Desktop=120, Default=80}" HeightRequest="{OnIdiom Desktop=90, Default=80}" Source="dotnet_bot.png"  x:Name="Btn15"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
+
